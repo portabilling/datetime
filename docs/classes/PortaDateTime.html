@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+            <title>PortaDateTime</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">PortaDateTime</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/PortaDateTime.html" class="">PortaDateTime</a>
+</h4>
+
+                        </section>
+            
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="packages/PortaDateTime.html">PortaDateTime</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+    PortaDateTime
+
+        <span class="phpdocumentor-element__extends">
+        extends <abbr title="\DateTimeImmutable">DateTimeImmutable</abbr>
+    </span>
+    
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/PortaDateTime.html">PortaDateTime</a></li>
+                            </ul>
+        </div>
+    
+    
+    </h2>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="PortaDateTime.php"><a href="files/portadatetime.html"><abbr title="PortaDateTime.php">PortaDateTime.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">31</span>
+
+    </aside>
+
+            <p class="phpdocumentor-summary">Immutable class to handle PortaOne billing datetime and date strings as objects</p>
+
+    <section class="phpdocumentor-description"><p>Portaone API always use UTC datetime while local timezone is essential to show/set
+datetime at the business-logic level.</p>
+<p>In addition, some specific task appears like to set correct addon product change
+overe midnight at local time: last second of one day to end one product and
+00:00:00 of the next day for the new product.</p>
+<p>This class extends <a href="https://www.php.net/manual/en/class.datetimeimmutable.php">DateTimeImmutable</a> with
+simple way to translate between porta-formatted UTC strings and DateTime objects
+in local timezone plus some useful functions to set time at specific boundaries.</p>
+<p>Immutable means call of any modification method returns a new instance of the class.</p>
+<p>Also, mind that default timezone may be defined in <a href="https://www.php-fig.org/psr/psr-11/">PSR-11 container</a>, see <code class="prettyprint">__construct()</code> below.</p>
+<p>See the <a href="https://github.com/portabilling/datetime/blob/master/examples/UsageExample.php">usage example</a></p>
+</section>
+
+
+
+
+
+
+
+
+<h3 id="toc">
+    Table of Contents
+    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/PortaDateTime.html#constant_DEFAULT_TIMEZONE_TAG">DEFAULT_TIMEZONE_TAG</a>
+    <span>
+        &nbsp;= &#039;default.timezone&#039;                            </span>
+</dt>
+<dd>Default timezone tag to retrieve default timezone from PSR-11 container</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/PortaDateTime.html#constant_PORTA_DATE">PORTA_DATE</a>
+    <span>
+        &nbsp;= &#039;Y-m-d&#039;                            </span>
+</dt>
+<dd>Standart Porta format for date-only string</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/PortaDateTime.html#constant_PORTA_DATETIME">PORTA_DATETIME</a>
+    <span>
+        &nbsp;= &#039;Y-m-d H:i:s&#039;                            </span>
+</dt>
+<dd>Standart Porta format for date-time string</dd>
+
+                        <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/PortaDateTime.html#method___construct">__construct()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd>Setup the class</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/PortaDateTime.html#method_between">between()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Return true if object datetime is between $from and $to</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/PortaDateTime.html#method_firstDayNextMonth">firstDayNextMonth()</a>
+    <span>
+                                &nbsp;: <a href="classes/PortaDateTime.html"><abbr title="\PortaDateTime">PortaDateTime</abbr></a>    </span>
+</dt>
+<dd>return object which set to the fist day of the next month</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/PortaDateTime.html#method_firstMoment">firstMoment()</a>
+    <span>
+                                &nbsp;: <a href="classes/PortaDateTime.html"><abbr title="\PortaDateTime">PortaDateTime</abbr></a>    </span>
+</dt>
+<dd>Set time to the first moment of the day in the current timezone</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/PortaDateTime.html#method_formatDateTime">formatDateTime()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Returns Portaone-format datetime string in UTC for any DateTimeInterface</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/PortaDateTime.html#method_formatPorta">formatPorta()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Return Porta-formatted datetime string at UTC timezone</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/PortaDateTime.html#method_fromInterface">fromInterface()</a>
+    <span>
+                                &nbsp;: <abbr title="\PotrtaDateTime">PotrtaDateTime</abbr>    </span>
+</dt>
+<dd>Create PortaDateTime object from any DateTimeInterface object</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/PortaDateTime.html#method_fromPortaDateString">fromPortaDateString()</a>
+    <span>
+                                &nbsp;: <a href="classes/PortaDateTime.html"><abbr title="\PortaDateTime">PortaDateTime</abbr></a>    </span>
+</dt>
+<dd>Creates PortaDateTime object from Portaone date-only string</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/PortaDateTime.html#method_fromPortaString">fromPortaString()</a>
+    <span>
+                                &nbsp;: <a href="classes/PortaDateTime.html"><abbr title="\PortaDateTime">PortaDateTime</abbr></a>    </span>
+</dt>
+<dd>Creates PortaDateTime object from Porta-formatted string</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/PortaDateTime.html#method_inFuture">inFuture()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Checks if the datetime in the future or not</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/PortaDateTime.html#method_inPast">inPast()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Checks if the datetime in the past or not</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/PortaDateTime.html#method_lastDayThisMonth">lastDayThisMonth()</a>
+    <span>
+                                &nbsp;: <a href="classes/PortaDateTime.html"><abbr title="\PortaDateTime">PortaDateTime</abbr></a>    </span>
+</dt>
+<dd>Return object which set to the last day of current object&#039;s month</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/PortaDateTime.html#method_lastMoment">lastMoment()</a>
+    <span>
+                                &nbsp;: <a href="classes/PortaDateTime.html"><abbr title="\PortaDateTime">PortaDateTime</abbr></a>    </span>
+</dt>
+<dd>Set time to the last moment of the day (23:59:59) in the current timezone</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/PortaDateTime.html#method_nextDay">nextDay()</a>
+    <span>
+                                &nbsp;: <a href="classes/PortaDateTime.html"><abbr title="\PortaDateTime">PortaDateTime</abbr></a>    </span>
+</dt>
+<dd>Return object with one day later than this one</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/PortaDateTime.html#method_prorateTillEndOfMonth">prorateTillEndOfMonth()</a>
+    <span>
+                                &nbsp;: float    </span>
+</dt>
+<dd>Calculates prorated value from given date till the end of the month</dd>
+
+        </dl>
+
+
+
+        
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/PortaDateTime.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_DEFAULT_TIMEZONE_TAG">
+        DEFAULT_TIMEZONE_TAG
+        <a href="classes/PortaDateTime.html#constant_DEFAULT_TIMEZONE_TAG" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="PortaDateTime.php"><a href="files/portadatetime.html"><abbr title="PortaDateTime.php">PortaDateTime.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">49</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Default timezone tag to retrieve default timezone from PSR-11 container</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">DEFAULT_TIMEZONE_TAG</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;default.timezone&#039;</span>
+</code>
+
+
+    
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_PORTA_DATE">
+        PORTA_DATE
+        <a href="classes/PortaDateTime.html#constant_PORTA_DATE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="PortaDateTime.php"><a href="files/portadatetime.html"><abbr title="PortaDateTime.php">PortaDateTime.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">43</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Standart Porta format for date-only string</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">PORTA_DATE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;Y-m-d&#039;</span>
+</code>
+
+
+    
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_PORTA_DATETIME">
+        PORTA_DATETIME
+        <a href="classes/PortaDateTime.html#constant_PORTA_DATETIME" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="PortaDateTime.php"><a href="files/portadatetime.html"><abbr title="PortaDateTime.php">PortaDateTime.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">37</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Standart Porta format for date-time string</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">PORTA_DATETIME</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;Y-m-d H:i:s&#039;</span>
+</code>
+
+
+    
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+            </section>
+
+        
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/PortaDateTime.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/PortaDateTime.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="PortaDateTime.php"><a href="files/portadatetime.html"><abbr title="PortaDateTime.php">PortaDateTime.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">74</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Setup the class</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$datetime</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&quot;now&quot;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|<abbr title="\DateTimeZone">DateTimeZone</abbr>|<abbr title="\ContainerInterface">ContainerInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$timezone</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&quot;UTC&quot;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$timezoneTag</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::DEFAULT_TIMEZONE_TAG</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"><p>The same as standard <a href="https://www.php.net/manual/en/class.datetimeimmutable.php">DateTimeImmutable</a>,
+but may accept timezone very different ways either <a href="https://www.php.net/manual/en/class.datetimezone">DateTimeZone</a>
+class or just a timezone string.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$datetime</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&quot;now&quot;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The same as basic DateTime parameter</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$timezone</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|<abbr title="\DateTimeZone">DateTimeZone</abbr>|<abbr title="\ContainerInterface">ContainerInterface</abbr></span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&quot;UTC&quot;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Timezone may be supplied
+different ways:</p>
+<ul>
+<li>By providing <a href="https://www.php.net/manual/en/class.datetimezone">DateTimeZone</a>
+object, same as base class</li>
+<li>By providig string, then DateTimeZone object will be created using this
+string as timezone argument</li>
+<li>By providing PSR-11 container object, then constructor will use get()
+method to retrieve DateTimeZone object <strong>or</strong> timezone string from the
+container. See $tomezoneTag info below. If it failed to retrieve timezone
+from container - it will fallbeck to UTC silently.</li>
+</ul>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$timezoneTag</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">self::DEFAULT_TIMEZONE_TAG</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>optional, only used if PSR-11 container given
+as timezone argument to use as <code class="prettyprint">$timezone-&gt;get($timezoneTag)</code>. If omit,
+class constant <a href="classes/PortaDateTime.html#constant_DEFAULT_TIMEZONE_TAG"><abbr title="\PortaDateTime::DEFAULT_TIMEZONE_TAG">PortaDateTime::DEFAULT_TIMEZONE_TAG</abbr></a> default tag be used.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_between">
+        between()
+        <a href="classes/PortaDateTime.html#method_between" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="PortaDateTime.php"><a href="files/portadatetime.html"><abbr title="PortaDateTime.php">PortaDateTime.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">273</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Return true if object datetime is between $from and $to</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">between</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PortaDateTime.html"><abbr title="\PortaDateTime">PortaDateTime</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$from</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PortaDateTime.html"><abbr title="\PortaDateTime">PortaDateTime</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$to</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"><p>If $from or $to set to null, it means there no limit on the side.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$from</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PortaDateTime.html"><abbr title="\PortaDateTime">PortaDateTime</abbr></a>|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$to</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PortaDateTime.html"><abbr title="\PortaDateTime">PortaDateTime</abbr></a>|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_firstDayNextMonth">
+        firstDayNextMonth()
+        <a href="classes/PortaDateTime.html#method_firstDayNextMonth" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="PortaDateTime.php"><a href="files/portadatetime.html"><abbr title="PortaDateTime.php">PortaDateTime.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">217</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">return object which set to the fist day of the next month</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">firstDayNextMonth</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PortaDateTime.html"><abbr title="\PortaDateTime">PortaDateTime</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/PortaDateTime.html"><abbr title="\PortaDateTime">PortaDateTime</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>new object with applied changes</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_firstMoment">
+        firstMoment()
+        <a href="classes/PortaDateTime.html#method_firstMoment" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="PortaDateTime.php"><a href="files/portadatetime.html"><abbr title="PortaDateTime.php">PortaDateTime.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">187</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Set time to the first moment of the day in the current timezone</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">firstMoment</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PortaDateTime.html"><abbr title="\PortaDateTime">PortaDateTime</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/PortaDateTime.html"><abbr title="\PortaDateTime">PortaDateTime</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>new object with applied changes</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_formatDateTime">
+        formatDateTime()
+        <a href="classes/PortaDateTime.html#method_formatDateTime" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="PortaDateTime.php"><a href="files/portadatetime.html"><abbr title="PortaDateTime.php">PortaDateTime.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">284</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns Portaone-format datetime string in UTC for any DateTimeInterface</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">formatDateTime</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTimeInterface">DateTimeInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$datetime</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$datetime</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTimeInterface">DateTimeInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_formatPorta">
+        formatPorta()
+        <a href="classes/PortaDateTime.html#method_formatPorta" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="PortaDateTime.php"><a href="files/portadatetime.html"><abbr title="PortaDateTime.php">PortaDateTime.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">165</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Return Porta-formatted datetime string at UTC timezone</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">formatPorta</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"><p>Shift timezone to UTC and format to Porta format datetime string.</p>
+</section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Porta-formatted datetime string in UTC zone</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fromInterface">
+        fromInterface()
+        <a href="classes/PortaDateTime.html#method_fromInterface" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="PortaDateTime.php"><a href="files/portadatetime.html"><abbr title="PortaDateTime.php">PortaDateTime.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">153</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create PortaDateTime object from any DateTimeInterface object</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromInterface</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTimeInterface">DateTimeInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$object</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\PotrtaDateTime">PotrtaDateTime</abbr></span></code>
+
+        <section class="phpdocumentor-description"><p>Timezone of the jbject will match timezone of the given source</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$object</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\DateTimeInterface">DateTimeInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>to convert to PortaDateTime object</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\PotrtaDateTime">PotrtaDateTime</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fromPortaDateString">
+        fromPortaDateString()
+        <a href="classes/PortaDateTime.html#method_fromPortaDateString" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="PortaDateTime.php"><a href="files/portadatetime.html"><abbr title="PortaDateTime.php">PortaDateTime.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">137</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Creates PortaDateTime object from Portaone date-only string</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromPortaDateString</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$date</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|<abbr title="\DateTimeZone">DateTimeZone</abbr>|<abbr title="\ContainerInterface">ContainerInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$timezone</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;UTC&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$timezoneTag</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::DEFAULT_TIMEZONE_TAG</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PortaDateTime.html"><abbr title="\PortaDateTime">PortaDateTime</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Creates object from Portaone date-only string with time is set to zero
+in desired timezone. The difference to create from full datetime porta string
+is that date string in the billing always related to context-local
+(example - customer) timzone, then need to be set right way.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$date</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><ul>
+<li>the date string as you got it form billing</li>
+</ul>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$timezone</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|<abbr title="\DateTimeZone">DateTimeZone</abbr>|<abbr title="\ContainerInterface">ContainerInterface</abbr></span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;UTC&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Timezone may be supplied
+different ways:</p>
+<ul>
+<li>By providing <a href="https://www.php.net/manual/en/class.datetimezone">DateTimeZone</a>
+object, same as base class</li>
+<li>By providig string, then DateTimeZone object will be created using this
+string as timezone argument</li>
+<li>By providing PSR-11 container object, then constructor will use get()
+method to retrieve DateTimeZone object <strong>or</strong> timezone string from the
+container. See $tomezoneTag info below. If it failed to retrieve timezone
+from container - it will fallbeck to UTC silently.</li>
+</ul>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$timezoneTag</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">self::DEFAULT_TIMEZONE_TAG</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>optional, only used if PSR-11 container given
+as timezone argument to use as <code class="prettyprint">$timezone-&gt;get($timezoneTag)</code>. If omit,
+class constant <a href="classes/PortaDateTime.html#constant_DEFAULT_TIMEZONE_TAG"><abbr title="\PortaDateTime::DEFAULT_TIMEZONE_TAG">PortaDateTime::DEFAULT_TIMEZONE_TAG</abbr></a> default tag be used.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/PortaDateTime.html"><abbr title="\PortaDateTime">PortaDateTime</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fromPortaString">
+        fromPortaString()
+        <a href="classes/PortaDateTime.html#method_fromPortaString" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="PortaDateTime.php"><a href="files/portadatetime.html"><abbr title="PortaDateTime.php">PortaDateTime.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">104</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Creates PortaDateTime object from Porta-formatted string</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromPortaString</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$datetime</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|<abbr title="\DateTimeZone">DateTimeZone</abbr>|<abbr title="\ContainerInterface">ContainerInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$timezone</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;UTC&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$timezoneTag</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">self::DEFAULT_TIMEZONE_TAG</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PortaDateTime.html"><abbr title="\PortaDateTime">PortaDateTime</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"><p>Creates object from Portaone datetime string with desired timezone.
+Please, mind the billing always returns datetime in UTC.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$datetime</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><ul>
+<li>the datetime string as you got it form billing</li>
+</ul>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$timezone</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|<abbr title="\DateTimeZone">DateTimeZone</abbr>|<abbr title="\ContainerInterface">ContainerInterface</abbr></span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;UTC&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Timezone may be supplied
+different ways:</p>
+<ul>
+<li>By providing <a href="https://www.php.net/manual/en/class.datetimezone">DateTimeZone</a>
+object, same as base class</li>
+<li>By providig string, then DateTimeZone object will be created using this
+string as timezone argument</li>
+<li>By providing PSR-11 container object, then constructor will use get()
+method to retrieve DateTimeZone object <strong>or</strong> timezone string from the
+container. See $tomezoneTag info below. If it failed to retrieve timezone
+from container - it will fallbeck to UTC silently.</li>
+</ul>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$timezoneTag</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">self::DEFAULT_TIMEZONE_TAG</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>optional, only used if PSR-11 container given
+as timezone argument to use as <code class="prettyprint">$timezone-&gt;get($timezoneTag)</code>. If omit,
+class constant <a href="classes/PortaDateTime.html#constant_DEFAULT_TIMEZONE_TAG"><abbr title="\PortaDateTime::DEFAULT_TIMEZONE_TAG">PortaDateTime::DEFAULT_TIMEZONE_TAG</abbr></a> default tag be used.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/PortaDateTime.html"><abbr title="\PortaDateTime">PortaDateTime</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_inFuture">
+        inFuture()
+        <a href="classes/PortaDateTime.html#method_inFuture" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="PortaDateTime.php"><a href="files/portadatetime.html"><abbr title="PortaDateTime.php">PortaDateTime.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">249</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Checks if the datetime in the future or not</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">inFuture</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>true if datetime in the future</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_inPast">
+        inPast()
+        <a href="classes/PortaDateTime.html#method_inPast" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="PortaDateTime.php"><a href="files/portadatetime.html"><abbr title="PortaDateTime.php">PortaDateTime.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">259</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Checks if the datetime in the past or not</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">inPast</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>true if datetime in the future</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_lastDayThisMonth">
+        lastDayThisMonth()
+        <a href="classes/PortaDateTime.html#method_lastDayThisMonth" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="PortaDateTime.php"><a href="files/portadatetime.html"><abbr title="PortaDateTime.php">PortaDateTime.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">227</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Return object which set to the last day of current object&#039;s month</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">lastDayThisMonth</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PortaDateTime.html"><abbr title="\PortaDateTime">PortaDateTime</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/PortaDateTime.html"><abbr title="\PortaDateTime">PortaDateTime</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>new object with applied changes</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_lastMoment">
+        lastMoment()
+        <a href="classes/PortaDateTime.html#method_lastMoment" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="PortaDateTime.php"><a href="files/portadatetime.html"><abbr title="PortaDateTime.php">PortaDateTime.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">197</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Set time to the last moment of the day (23:59:59) in the current timezone</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">lastMoment</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PortaDateTime.html"><abbr title="\PortaDateTime">PortaDateTime</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/PortaDateTime.html"><abbr title="\PortaDateTime">PortaDateTime</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>new object with applied changes</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_nextDay">
+        nextDay()
+        <a href="classes/PortaDateTime.html#method_nextDay" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="PortaDateTime.php"><a href="files/portadatetime.html"><abbr title="PortaDateTime.php">PortaDateTime.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">207</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Return object with one day later than this one</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">nextDay</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/PortaDateTime.html"><abbr title="\PortaDateTime">PortaDateTime</abbr></a></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/PortaDateTime.html"><abbr title="\PortaDateTime">PortaDateTime</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>new object with applied changes</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_prorateTillEndOfMonth">
+        prorateTillEndOfMonth()
+        <a href="classes/PortaDateTime.html#method_prorateTillEndOfMonth" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="PortaDateTime.php"><a href="files/portadatetime.html"><abbr title="PortaDateTime.php">PortaDateTime.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">238</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Calculates prorated value from given date till the end of the month</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">prorateTillEndOfMonth</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fee</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">float</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$fee</span>
+                : <span class="phpdocumentor-signature__argument__return-type">float</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Basic rate to prorate</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">float</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Prorated value</p>
+</section>
+
+    
+</article>
+            </section>
+
+        
+    <script type="text/javascript">
+        function loadExternalCodeSnippets(line) {
+            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
+                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+                var language = 'php';
+
+                var code = document.createElement('code');
+                code.className = 'language-' + language;
+
+                pre.textContent = '';
+
+                pre.setAttribute('data-line', line)
+                code.textContent = 'Loading…';
+
+                pre.appendChild(code);
+
+                var xhr = new XMLHttpRequest();
+
+                xhr.open('GET', src, true);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+
+                            Prism.highlightElement(code);
+                        }
+                        else if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                        }
+                        else {
+                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
+                        }
+                    }
+                };
+
+                xhr.send(null);
+            });
+        }
+
+        var modals = document.querySelectorAll("[data-modal]");
+
+        modals.forEach(function (trigger) {
+            trigger.addEventListener("click", function (event) {
+                //event.preventDefault();
+                const modal = document.getElementById(trigger.dataset.modal);
+                modal.classList.add("phpdocumentor-modal__open");
+                loadExternalCodeSnippets(trigger.dataset.line)
+                const exits = modal.querySelectorAll("[data-exit-button]");
+                exits.forEach(function (exit) {
+                    exit.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        modal.classList.remove("phpdocumentor-modal__open");
+                    });
+                });
+            });
+        });
+    </script>
+
+    </article>
+                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+            </div>
+        </div>
+        <a href="classes/PortaDateTime.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+</body>
+</html>
