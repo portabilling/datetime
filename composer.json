@@ -1,0 +1,41 @@
+{
+    "name": "porta/datetime",
+    "description": "PortaOne billing API datetime helper class",
+    "type": "library",
+    "homepage": "https://github.com/portabilling/datetime",
+    "keywords": ["portaone", "billing", "api", "portastart"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexey Pavlyuts",
+            "email": "alexey@pavlyuts.ru"
+        }
+    ],
+    "support": {
+        "email": "alexey@pavlyuts.ru",
+        "issues": "https://github.com/portabilling/datetime/issues",
+        "wiki": "https://github.com/portabilling/datetime/wiki",
+        "source": "https://github.com/portabilling/datetime",
+        "docs": "https://portabilling.github.io/datetime/"
+    },
+    "require": {
+        "php": "^7.4|^8.0|^8.1|^8.2",
+        "psr/container": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PortaDateTimeTest\\": "Test"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --configuration Test/configuration.xml Test --coverage-text"
+    }
+}
